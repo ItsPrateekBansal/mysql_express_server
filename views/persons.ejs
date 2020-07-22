@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/addperson">Add a Person to the table</a>
+    <table border="1" cellspacing ="10" cellpadding="10">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+      <% persons.forEach(function(person){ %>
+        <tr>
+          <td><%=person['NAME']%></td>
+          <td><%=person['AGE']%></td>
+          <td><%=person['CITY']%></td>
+        </tr>
+    <%  }) %>
+    </table>
+  </body>
+</html>
